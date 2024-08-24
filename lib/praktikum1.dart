@@ -25,9 +25,7 @@ class HomeScreen extends StatelessWidget {
           title: Center(
             child: Text(
               "Rizz News",
-              style: TextStyle(
-                color: Colors.white
-              ),
+              style: TextStyle(color: Colors.white),
             ),
           ),
           backgroundColor: const Color.fromARGB(255, 35, 35, 35),
@@ -39,18 +37,19 @@ class HomeScreen extends StatelessWidget {
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.white,
                 tabs: [
-                  Tab(text: "Skibidi",),
-                  Tab(text: "GEDAGEDIGEDAGEDAO",)
+                  Tab(
+                    text: "Skibidi",
+                  ),
+                  Tab(
+                    text: "GEDAGEDIGEDAGEDAO",
+                  )
                 ],
               ),
             ),
           ),
         ),
         body: TabBarView(
-          children: [
-            Skibidi(),
-            geda()
-          ],
+          children: [Skibidi(), geda()],
         ),
       ),
     );
@@ -58,7 +57,6 @@ class HomeScreen extends StatelessWidget {
 }
 
 class Skibidi extends StatelessWidget {
-
   const Skibidi({super.key});
 
   @override
@@ -75,7 +73,7 @@ class Skibidi extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.black,
-                width: 2.0,        
+                width: 2.0,
               ),
               borderRadius: BorderRadius.circular(8),
             ),
@@ -138,8 +136,6 @@ class Skibidi extends StatelessWidget {
   }
 }
 
-
-
 class geda extends StatelessWidget {
   const geda({super.key});
 
@@ -153,36 +149,36 @@ class geda extends StatelessWidget {
           child: Column(
             children: [
               Container(
-            margin: EdgeInsets.only(top: 10),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.black,
-                width: 2.0,        
-              ),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.asset(
-                  'assets/nugget.gif',
-                  width: screenWidth * 0.8,
-                ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    'Gedagedigedagedago Abin mery alontamago Wede wude comfrom? Wede wude go? Wede jude kamfro Bagulado?',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
-                    overflow: TextOverflow.clip,
+                margin: EdgeInsets.only(top: 10),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 2.0,
                   ),
+                  borderRadius: BorderRadius.circular(8),
                 ),
-              ],
-            ),
-          ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/nugget.gif',
+                      width: screenWidth * 0.8,
+                    ),
+                    SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'Gedagedigedagedago Abin mery alontamago Wede wude comfrom? Wede wude go? Wede jude kamfro Bagulado?',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        overflow: TextOverflow.clip,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         )
