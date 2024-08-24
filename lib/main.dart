@@ -7,6 +7,8 @@ import 'package:thanks/dateTime_widget.dart';
 import 'package:thanks/dialog.dart';
 import 'package:thanks/image_widget.dart';
 import 'package:thanks/input_widget.dart';
+import 'package:thanks/listView.dart';
+import 'package:thanks/praktikum1.dart';
 import 'package:thanks/scaffold_widget.dart';
 import 'package:thanks/stack.dart';
 import 'package:thanks/text_widget.dart';
@@ -27,7 +29,7 @@ class MainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: stack(),
+      home: praktikum1(),
     );
   }
 }

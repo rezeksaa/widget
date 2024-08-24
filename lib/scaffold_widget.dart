@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:thanks/dateTime_widget.dart';
 import 'package:thanks/dialog.dart';
+import 'package:thanks/input_widget.dart';
 
 class ScaffoldWidget extends StatelessWidget {
   const ScaffoldWidget({super.key});
@@ -35,7 +37,8 @@ class ScaffoldWidget extends StatelessWidget {
               ),
             ),
           ),
-          dialog_widget()
+          input_widget(),
+          DateTimeWidget(title: 'yoi')
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
